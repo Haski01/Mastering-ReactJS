@@ -21,7 +21,7 @@ const incCount = () => {
 
 ## Why?
 
-- React batches state updates inside the same function/sync block.
+- React groups state updates together when they happen in the same function.
 - All setCount(count + 1) use the same stale value of count.
 - So only the last update takes effect, not all four.
 
