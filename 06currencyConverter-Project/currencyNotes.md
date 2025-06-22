@@ -2,6 +2,7 @@
 
 ```
 -> In this directory we'r going to build currency converter app
+-> building our own custome hook also while requsting api
 -> study new hook useId
 ```
 
@@ -10,7 +11,7 @@
 ## api link
 
 ```javascript
-let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`;
+let url = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`;
 ```
 
 ## input box
