@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { About, Contact, Home, User } from "./components/index.js";
+import Github, { githubData } from "./components/Github/Github.jsx";
 
 // =>                     [Methods for routing]
 /*
@@ -33,6 +34,7 @@ const route = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="user/:userId" element={<User />} />
+      <Route loader={githubData} path="github" element={<Github />} />
     </Route>
   )
 );
