@@ -4,6 +4,11 @@
     - In this repo we learn about redux,react-redux and redux-tookKit..
     - they are all state management third party liberaries..
     - we use redux-tookKit
+    - learning about some key words
+        - store
+        - reducer
+        - useSelector():
+        - useDispatch():
 ```
 
 ## instalation redux-tookKit
@@ -31,9 +36,7 @@ npm install react-redux
 ### Key Concepts:
 
 - **Store**: Central place to keep the state of your entire app.
-
 - **Actions**: Plain objects that describe what happened (e.g., { type: "ADD_TODO" })
-
 - **Reducers**: Functions that take current state + action and return new state.
 
 ### Why Redux?
@@ -57,7 +60,7 @@ npm install react-redux
 
 - **< Provider store={store} > →** Wrap your app to give Redux access.
 - **useSelector(state => state.xyz) →** Read data from store.
-- **useDispatch() →** Send actions to the store.
+- **useDispatch() →** Send actions to the store (dispatch means bhejna, dispatch reducer/function ko use karte hue store main changes karta h) .
 
 ## 3. What is Redux Toolkit (RTK)?
 
