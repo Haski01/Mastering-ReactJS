@@ -102,12 +102,12 @@ export class DbService {
   /* *************************************************** */
 
   // file or image upload service/method
-  async uploadImage(image) {
+  async uploadImage(file) {
     try {
       return await this.bucket.createFile(
         config.appwriteBucketId,
         ID.userId(),
-        image
+        file
       );
     } catch (error) {
       console.log("Appwrite database service :: uploadImage :: error", error);
