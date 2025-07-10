@@ -1,8 +1,9 @@
 import React, { useId } from "react";
 
 // input component
-// introduce new useRef hook
-const Input = React.useRef(function Input(
+// introduce new forwordRef hook
+
+const Input = React.forwardRef(function Input(
   { label, type = "text", className = "", ...props },
   ref
 ) {
