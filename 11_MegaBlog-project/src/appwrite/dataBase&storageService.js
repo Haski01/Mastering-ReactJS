@@ -86,6 +86,8 @@ export class DbService {
   }
 
   // get all post/ list post
+  //  query get result in array
+
   async getArticles(queries = [Query.equal("status", "active")]) {
     try {
       return await this.databases.listDocuments(
